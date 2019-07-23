@@ -1,5 +1,6 @@
 <template>
   <div class="row justify-center">
+    <!-- Indice en la pagina principal donde estan todos los campeones.  -->
     <div class="col-6 q-mt-xl">
       <q-card class="champions">
         <q-card-section class="text-center champions-header text-white">

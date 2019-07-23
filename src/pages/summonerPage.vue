@@ -1,13 +1,16 @@
 <template>
   <div class="row justify-center">
     <div class="row q-mt-xl">
+      <!-- Sidebar de la parte izquierda que contiene información del usuario (Icono, liga soloQ, liga Premade y campeones mas jugados.) -->
       <q-card class="sideContent">
         <q-card-section>
+          <!-- Icono del jugador. -->
           <div class="row justify-center">
             <img class="profileIcon" src="../statics/images/profileIcon.png"/>
           </div>
         </q-card-section>
         <q-card-separator></q-card-separator>
+        <!-- Primer contenedor de ranking del usuario (soloQ). -->
         <q-card-section class="rankingBox">
           <div class="row q-py-sm ">
             <div class="leagueIcon col-6">
@@ -21,6 +24,7 @@
             </div>
           </div>
         </q-card-section>
+        <!-- Segundo contenedor de rankeds. (Premade) -->
         <q-card-section class="rankingBox">
           <div class="row q-py-sm ">
             <div class="leagueIcon col-6">
@@ -34,6 +38,7 @@
             </div>
           </div>
         </q-card-section>
+        <!-- Inicio de los campeones mas jugados, cada campeon tiene su propio contenedor con información de ese campeon. -->
         <q-card-section class="championStats">
           <div class="row q-pt-sm">
             <div><img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/Aatrox.png"/></div>

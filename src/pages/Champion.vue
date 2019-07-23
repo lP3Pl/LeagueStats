@@ -1,6 +1,8 @@
 <template>
+  <!-- Pagina de wiki de campeones, cada campeon esta redirigido a su propia pagina. -->
   <div class="row justify-center">
     <div class="row q-mt-xl">
+      <!-- Estadisticas base de los personajes mas nombre y imagen. -->
       <q-card class="championContainer">
         <q-card-section>
           <div class="row ">
@@ -12,10 +14,10 @@
             <div class="championStatistics">
               <div class="statisticsTitle q-mb-sm">Base Statistics</div>
               <div class="statisticColumn">
-                <div>Health <!--<span>580(+90)</span>--></div>
-                <div>Health Regen. <!--<span>3(+0.75)</span>--></div>
-                <div>Range <!--<span>175</span>--></div>
-                <div>Attack Damage <!--<span>60(+5)</span>--></div>
+                <div>Health</div>
+                <div>Health Regen.</div>
+                <div>Range</div>
+                <div>Attack Damage</div>
               </div>
               <div class="statisticColumn">
                 <div class="statisticValue">580(+90)</div>
@@ -24,10 +26,10 @@
                 <div class="statisticValue">60(+5)</div>
               </div>
               <div class="statisticColumn">
-                <div>Attack Speed<!-- <span>0.651(+2.5%)</span>--></div>
-                <div>Armor <!--<span>38(+3.25)</span>--></div>
-                <div>Magic Resist <!--<span>32.1(+1.25)</span>--></div>
-                <div>Move.Speed <!--<span>345</span>--></div>
+                <div>Attack Speed</div>
+                <div>Armor </div>
+                <div>Magic Resist </div>
+                <div>Move.Speed </div>
               </div>
               <div class="statisticColumn">
                 <div class="statisticValue">0.651(+2.5%)</div>
@@ -38,6 +40,7 @@
             </div>
           </div>
         </q-card-section>
+        <!--  Skills de los campeones, con una descripción e imagen de dicha skill. -->
         <q-card-section class="skill">
           <div class="skillName">
             Death Bringer Stance
@@ -121,11 +124,6 @@
 
 <script>
     export default {
-/*      methods: {
-        doSomething() {
-          console.log($router.currentRoute.query.name)
-        }
-      }*/
       mounted() {
         console.log(this.$router.currentRoute.query.name);
 
